@@ -148,7 +148,7 @@ async function loadSpectrumData(rock) {
         });
         
         // 解析CSV文件
-        const response = await fetch(`rockmanager/spectra/${rock.spectrum}`);
+        const response = await fetch(`spectra/${rock.spectrum}`);
         if (!response.ok) {
             throw new Error(`HTTP ${response.status}: 无法加载光谱文件`);
         }
