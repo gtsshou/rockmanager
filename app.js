@@ -243,7 +243,7 @@ function createRockCard(rock) {
     col.innerHTML = `
         <div class="card rock-card h-100" data-id="${rock.id}">
             <div class="position-relative">
-                <img src="images/rocks/${rock.image}" 
+                <img src="rockmanager/rocks/${rock.image}" 
                      class="card-img-top rock-image" 
                      alt="${rock.rock_type || '岩石样本'}"
                      onerror="this.src='images/rocks/default.jpg'">
