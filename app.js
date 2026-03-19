@@ -61,7 +61,7 @@ async function loadRockData() {
         }
         
         // 加载数据
-        const response = await fetch('rockmanager/rocks.json');
+        const response = await fetch('rocks.json');
         
         if (!response.ok) {
             throw new Error(`HTTP ${response.status}: ${response.statusText}`);
@@ -243,10 +243,10 @@ function createRockCard(rock) {
     col.innerHTML = `
         <div class="card rock-card h-100" data-id="${rock.id}">
             <div class="position-relative">
-                <img src="rockmanager/rocks/${rock.image}" 
+                <img src="rocks/${rock.image}" 
                      class="card-img-top rock-image" 
                      alt="${rock.rock_type || '岩石样本'}"
-                     onerror="this.src='images/rocks/default.jpg'">
+                     onerror="this.src='rocks/default.jpg'">
                 <span class="rock-badge badge" 
                     style="background-color: ${getRockTypeColor(rock.rock_type)}; color: white;">
                     ${rock.rock_type || '未知'}
