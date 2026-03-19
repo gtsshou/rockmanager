@@ -61,7 +61,7 @@ async function loadRockData() {
         }
         
         // 加载数据
-        const response = await fetch('data/rocks.json');
+        const response = await fetch('rockmanager/rocks.json');
         
         if (!response.ok) {
             throw new Error(`HTTP ${response.status}: ${response.statusText}`);
