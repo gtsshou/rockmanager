@@ -152,7 +152,7 @@ function showDetail(rockId) {
         <div class="row">
             <div class="col-md-6">
                 <div class="text-center mb-3">
-                    <img src="images/rocks/${rock.image}" 
+                    <img src="rocks/${rock.image}" 
                          class="img-fluid rounded" 
                          alt="${rock.rock_type}"
                          style="max-height: 300px;"
